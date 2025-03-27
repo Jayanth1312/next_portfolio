@@ -5,9 +5,10 @@ export default function PictureData() {
   return (
     <PixelTransition
       firstContent={
-        <ProfileImage
-          src="https://unsplash.com/photos/man-sitting-on-gray-concrete-wall-_M6gy9oHgII/"
-          alt="My Profile"
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/1200px-Cat03.jpg"
+          alt="default pixel transition content, a cat!"
+          style={{ width: "100%", height: "100%", objectFit: "cover" }}
         />
       }
       secondContent={

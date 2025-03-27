@@ -73,7 +73,7 @@ function DockItem({
   const targetSize = useTransform(
     mouseDistance,
     [-distance, 0, distance],
-    [baseItemSize, magnification, baseItemSize],
+    [baseItemSize, magnification, baseItemSize]
   );
   const size = useSpring(targetSize, spring);
 
@@ -89,13 +89,15 @@ function DockItem({
       onFocus={() => isHovered.set(1)}
       onBlur={() => isHovered.set(0)}
       onClick={onClick}
-      className={`relative inline-flex items-center justify-center rounded-xl cursor-pointer ${isActive ? "bg-white" : "bg-[#1e1e1e]"}`}
+      className={`relative inline-flex items-center justify-center rounded-xl cursor-pointer ${
+        isActive ? "bg-white" : "bg-[#1e1e1e]"
+      }`}
       tabIndex={0}
       role="button"
       aria-haspopup="true"
     >
       {Children.map(children, (child) =>
-        cloneElement(child as React.ReactElement, { isHovered, isActive }),
+        cloneElement(child as React.ReactElement, { isHovered, isActive })
       )}
     </motion.div>
   );
@@ -168,7 +170,7 @@ export default function Dock({
 
   const maxHeight = useMemo(
     () => Math.max(dockHeight, magnification + magnification / 2 + 4),
-    [magnification],
+    [magnification]
   );
   const heightRow = useTransform(isHovered, [0, 1], [panelHeight, maxHeight]);
   const height = useSpring(heightRow, spring);

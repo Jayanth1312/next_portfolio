@@ -178,7 +178,7 @@ const VariableProximity = forwardRef<HTMLSpanElement, VariableProximityProps>(
         style={{ display: "inline", ...style }}
         {...restProps}
       >
-        {words.map((word, wordIndex) => (
+        {words.map((word: string, wordIndex: number) => (
           <span
             key={wordIndex}
             style={{ display: "inline-block", whiteSpace: "nowrap" }}

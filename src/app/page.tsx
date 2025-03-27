@@ -12,22 +12,22 @@ export default function Home() {
     {
       icon: <House size={24} color="white" />,
       label: "Home",
-      // onClick: () => alert("Home!"),
+      onClick: () => {},
     },
     {
       icon: <User size={24} color="white" />,
       label: "About",
-      // onClick: () => alert("Archive!"),
+      onClick: () => {},
     },
     {
       icon: <BriefcaseBusiness size={24} color="white" />,
       label: "Projects",
-      // onClick: () => alert("Profile!"),
+      onClick: () => {},
     },
     {
       icon: <Mail size={24} color="white" />,
       label: "Contact",
-      // onClick: () => alert("Settings!"),
+      onClick: () => {},
     },
   ];
 
