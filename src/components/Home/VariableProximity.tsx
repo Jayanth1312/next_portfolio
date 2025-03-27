@@ -9,7 +9,7 @@ import {
   RefObject,
 } from "react";
 import { motion } from "framer-motion";
-import "../styles/VariableProximity.css";
+import "../../styles/VariableProximity.css";
 
 type Callback = () => void;
 
@@ -97,7 +97,7 @@ const VariableProximity = forwardRef<HTMLSpanElement, VariableProximityProps>(
             .map((s) => {
               const [name, value] = s.split(" ");
               return [name.replace(/['"]/g, ""), parseFloat(value)];
-            }),
+            })
         );
 
       const fromSettings = parseSettings(fromFontVariationSettings);
@@ -114,7 +114,7 @@ const VariableProximity = forwardRef<HTMLSpanElement, VariableProximityProps>(
       x1: number,
       y1: number,
       x2: number,
-      y2: number,
+      y2: number
     ) => Math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2);
 
     const calculateFalloff = (distance: number) => {
@@ -145,7 +145,7 @@ const VariableProximity = forwardRef<HTMLSpanElement, VariableProximityProps>(
           mousePositionRef.current.x,
           mousePositionRef.current.y,
           letterCenterX,
-          letterCenterY,
+          letterCenterY
         );
 
         if (distance >= radius) {
@@ -210,7 +210,7 @@ const VariableProximity = forwardRef<HTMLSpanElement, VariableProximityProps>(
         <span className="sr-only">{label}</span>
       </span>
     );
-  },
+  }
 );
 
 VariableProximity.displayName = "VariableProximity";

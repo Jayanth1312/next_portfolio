@@ -1,14 +1,15 @@
 import PixelTransition from "./PixelTransition";
-import ProfileImage from "./ProfileImage";
+import profile from "@/assets/profile.jpg";
 
 export default function PictureData() {
   return (
     <PixelTransition
       firstContent={
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/1200px-Cat03.jpg"
-          alt="default pixel transition content, a cat!"
-          style={{ width: "100%", height: "100%", objectFit: "cover" }}
+          src={profile.src}
+          alt="Description"
+          className="w-fit h-fit"
+          lazy-loading="lazy"
         />
       }
       secondContent={

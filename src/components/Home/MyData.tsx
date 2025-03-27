@@ -1,11 +1,11 @@
 "use client";
 
 import { useRef } from "react";
-import VariableProximity from "@/components/VariableProximity";
-import { DownloadIcon } from "./ui/download";
-import { GithubIcon } from "./ui/github";
-import { InstagramIcon } from "./ui/instagram";
-import { LinkedinIcon } from "./ui/linkedin";
+import VariableProximity from "@/components/Home/VariableProximity";
+import { DownloadIcon } from "../ui/download";
+import { GithubIcon } from "../ui/github";
+import { InstagramIcon } from "../ui/instagram";
+import { LinkedinIcon } from "../ui/linkedin";
 import DecryptedText from "./DecryptedText";
 
 export default function MyData() {
@@ -20,7 +20,7 @@ export default function MyData() {
         <VariableProximity
           label={"Jayanth. Paladugu"}
           className={"variable-proximity-demo"}
-          fromFontVariationSettings="'wght' 500, 'opsz' 9"
+          fromFontVariationSettings="'wght' 400, 'opsz' 9"
           toFontVariationSettings="'wght' 1000, 'opsz' 40"
           containerRef={containerRef}
           radius={100}
@@ -28,7 +28,7 @@ export default function MyData() {
         />
       </div>
       <div className="notion-div">
-        <p className="italic">- Console. Code. Create. Repeat</p>
+        <p className="italic"> - Console. Code. Create. Repeat</p>
       </div>
       <div className="flex flex-col">
         <DecryptedText
@@ -45,7 +45,7 @@ export default function MyData() {
           text="seamless digital experiences, always exploring"
           animateOn="view"
           revealDirection="start"
-          speed={60}
+          speed={30}
           maxIterations={10}
           className="text-neutral-500"
           sequential={true}
@@ -55,7 +55,7 @@ export default function MyData() {
           text="new ways to push technology forward."
           animateOn="view"
           revealDirection="start"
-          speed={60}
+          speed={30}
           maxIterations={10}
           className="text-neutral-500"
           sequential={true}
