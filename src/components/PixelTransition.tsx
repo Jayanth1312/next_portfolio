@@ -66,7 +66,7 @@ const PixelTransition: React.FC<PixelTransitionProps> = ({
     if (!pixelGridEl || !activeEl) return;
 
     const pixels = pixelGridEl.querySelectorAll<HTMLDivElement>(
-      ".pixelated-image-card__pixel",
+      ".pixelated-image-card__pixel"
     );
     if (!pixels.length) return;
 
@@ -123,8 +123,8 @@ const PixelTransition: React.FC<PixelTransitionProps> = ({
         bg-[#222]
         text-white
         rounded-[15px]
-        border-2
-        border-white
+        border
+        border-neutral-700
         w-[300px]
         max-w-full
         relative

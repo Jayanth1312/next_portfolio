@@ -30,15 +30,6 @@ export default function MyData() {
       <div className="notion-div">
         <p className="italic">- Console. Code. Create. Repeat</p>
       </div>
-      {/* <div className="about-div">
-        <p className="text-neutral-500">
-          I&apos;m an application developer passionate about crafting
-        </p>
-        <p className="text-neutral-500">
-          seamless digital experiences, always exploring
-        </p>
-        <p className="text-neutral-500">new ways to push technology forward.</p>
-      </div> */}
       <div className="flex flex-col">
         <DecryptedText
           text="I'm an application developer passionate about crafting"

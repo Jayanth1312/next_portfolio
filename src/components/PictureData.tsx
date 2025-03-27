@@ -4,7 +4,12 @@ import ProfileImage from "./ProfileImage";
 export default function PictureData() {
   return (
     <PixelTransition
-      firstContent={<ProfileImage src="/assets/image.jpg" alt="My Profile" />}
+      firstContent={
+        <ProfileImage
+          src="https://unsplash.com/photos/man-sitting-on-gray-concrete-wall-_M6gy9oHgII/"
+          alt="My Profile"
+        />
+      }
       secondContent={
         <div
           style={{
@@ -12,7 +17,7 @@ export default function PictureData() {
             height: "100%",
             display: "grid",
             placeItems: "center",
-            backgroundColor: "#111",
+            backgroundColor: "#1e1e1e",
           }}
         >
           <p style={{ fontWeight: 900, fontSize: "3rem", color: "#ffffff" }}>
