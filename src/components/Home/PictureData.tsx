@@ -22,8 +22,10 @@ export default function PictureData() {
             backgroundColor: "#1e1e1e",
           }}
         >
-          <p style={{ fontWeight: 900, fontSize: "3rem", color: "#ffffff" }}>
-            Dude!
+          <p style={{ fontWeight: 900, fontSize: "2.5rem", color: "#ffffff", textAlign: "center" }}>
+            No <br />
+            Light<br />
+            mode!
           </p>
         </div>
       }

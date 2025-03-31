@@ -35,7 +35,7 @@ export default function MyData() {
           text="I'm an application developer passionate about crafting"
           animateOn="view"
           revealDirection="start"
-          speed={60}
+          speed={30}
           maxIterations={10}
           className="text-neutral-500"
           sequential={true}
